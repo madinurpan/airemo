@@ -94,19 +94,6 @@ jQuery(function ($) {
                 Mouse parallax
     ====================================== */
 
-    if($(window).width() > 780) {
-        $('.slider-area,.slider-sec,header').mousemove(function (e) {
-            $('[data-depth]').each(function () {
-                var depth = $(this).data('depth');
-                var amountMovedX = (e.pageX * -depth / 4);
-                var amountMovedY = (e.pageY * -depth / 4);
-
-                $(this).css({
-                    'transform': 'translate3d(' + amountMovedX + 'px,' + amountMovedY + 'px, 0)',
-                });
-            });
-        });
-    }
     /* ===================================
       Owl Carousel
      ====================================== */
