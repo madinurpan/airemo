@@ -47,6 +47,11 @@
 
 
 
+.b24-form-header-description{
+    display: none!important;
+}
+
+
 /* ===================================
     General
 ====================================== */
@@ -83,6 +88,64 @@ ul{margin-bottom: 0;}
 .opacity-7{opacity: .7;}
 .opacity-8{opacity: .8;}
 .opacity-9{opacity: .9;}
+
+.timeline-steps .timeline-step {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 1rem
+}
+
+@media (min-width:768px) {
+    .timeline-steps .timeline-step:not(:last-child):after {
+        content: "";
+        display: block;
+        border-top: .2rem dotted #3b82f6;
+        width: 11.46rem;
+        position: absolute;
+        left: 7.5rem;
+        top: .3125rem
+    }
+    .timeline-steps .timeline-step:not(:first-child):before {
+        content: "";
+        display: block;
+        border-top: .2rem dotted #3b82f6;
+        width: 11.8125rem;
+        position: absolute;
+        right: 7.5rem;
+        top: .3125rem
+    }
+}
+.timeline-steps {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap
+}
+.timeline-steps .timeline-content {
+    width: 18rem;
+    text-align: center
+}
+.timeline-steps .timeline-content .inner-circle {
+    border-radius: 1.5rem;
+    height: 1rem;
+    width: 1rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3b82f6
+}
+
+.timeline-steps .timeline-content .inner-circle:before {
+    content: "";
+    background-color: #3b82f6;
+    display: inline-block;
+    height: 3rem;
+    width: 3rem;
+    min-width: 3rem;
+    border-radius: 6.25rem;
+    opacity: .5
+}
 
 /* button */
 .btn {-webkit-appearance: initial; overflow: hidden;position: -webkit-sticky;position: sticky; z-index: 2; display:inline-block; font-size: 17px; border:2px solid transparent; letter-spacing: .5px; line-height: inherit; border-radius: 0; text-transform:capitalize; width: auto;font-family: 'Roboto', sans-serif; font-weight: 500; -webkit-transition: all .5s ease;-o-transition: all .5s ease !important;transition: all .5s ease !important;}
@@ -1731,17 +1794,17 @@ header .main-navigation nav .navbar-nav .nav-item .nav-link.active span{
 .scroll-top-arrow, .scroll-top-arrow:focus {
     font-size: 2rem;
     line-height: 2rem;
-    color: #fff;
+    color: #202020;
 
-    background-color: #202020;
+    background-color: white;
 
     height: 4rem;
     width: 4rem;
     cursor: pointer;
     padding: 1rem;
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 130px;
+    right: 50px;
     text-align: center;
     text-decoration: none;
     z-index: 80;
