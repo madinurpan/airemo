@@ -604,26 +604,20 @@ body._lock {
 }
 .modal__button { 
   cursor: pointer;
-  transform: translateY(-44.5%);
-  display: none;
+  transform: scale(0);
   transition: .5s ease-in-out;
 }
 .modal__button.active {
   margin-bottom: 38px;
-  transform: translateY(0%);
-  display: block;
+  transform: scale(1);
 }
 @media (max-width: 768px) {
   .modal__button {
-    cursor: pointer;
+    transform: scale(1);
     margin-bottom: 38px;
-    transform: translateY(0%);
-    display: block;
   }
   .modal__button.active {
-    margin-bottom: 38px;
-    transform: translateY(0%);
-    display: block;
+    transform: scale(1);
   }
 }
 .modal__link {
@@ -1602,7 +1596,7 @@ body._lock {
   padding-left: 30px;
   flex: 0 0 70%;
 }
-.application__form {
+/*.application__form {
   width: 70%;
   background-image: url(../img/application-2.jpg);
   background-repeat: no-repeat;
@@ -1611,7 +1605,7 @@ body._lock {
   display: flex;
   justify-content: center;
   filter: drop-shadow(15px 15px 30px rgba(15, 23, 34, 0.44));
-}
+}*/
 .application__body {
   display: flex;
   height: 359px;
@@ -1640,13 +1634,11 @@ body._lock {
   letter-spacing: 0.035em;
   color: #FFFFFF;
   position: relative;
-}
-.application__link span{
-  padding: 0 48px 0 0;
   background: url(../img/vector.svg) center right no-repeat;
-  z-index: 1;
+   padding: 0 48px 0 0;
 }
-.application__link span::before {
+
+.application__link::before {
   content: '';
   position: absolute;
   bottom: -16.5px;
@@ -1658,10 +1650,84 @@ body._lock {
   border-radius: 50%;
   pointer-events: none;
 }
-.application__link span:hover::before {
+.application__link:hover::before {
   right: 0px;
   transition: all 1s ease 0s;
 }
+
+
+
+/*---------------------------------------------------------------*/
+.b24-form-wrapper {
+  background-image: url(../img/application-2.jpg);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: cover;
+  filter: drop-shadow(15px 15px 30px rgba(15, 23, 34, 0.44));
+}
+.b24-form-header.b24-form-padding-side {
+  display: none;
+}
+.b24-form-header-description {
+  display: none;
+}
+.b24-form-wrapper.b24-form-border-bottom {
+  width: 70%;
+  height: 359px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: none;
+  margin: 0;
+}
+.b24-form-wrapper {
+  background-color: none;
+}
+.b24-form-control-container.b24-form-control-icon-after {
+  width: 370px; 
+}
+.b24-form-dark .b24-form-wrapper.b24-form-border-bottom{
+  border-bottom: none;
+}
+.b24-form-field.b24-form-field-phone.b24-form-control-string.b24-form-control-alert {
+  background-color: #fff;
+}
+.b24-form-btn-block .b24-form-btn {
+   content: 'Оставить заявку';
+  font-size: 1rem !important;
+  line-height: 1.25rem !important;
+  letter-spacing: 0.035em !important;
+  color: #FFFFFF !important;
+  position: relative !important;
+  background: url(../img/vector.svg) center right no-repeat !important;
+   padding: 0 48px 0 0 !important;
+     margin-top: 36px !important; 
+     min-height: 0 !important;
+     width: auto !important;;
+     border: 0 !important;; 
+     border-radius: 0 !important;; 
+     font-weight:  !important;
+    background-color: none !important;
+}
+
+.b24-form-btn-block .b24-form-btn::before {
+ content: '';
+
+  position: absolute !important;
+  bottom: -16.5px !important;
+  right: -40px !important;
+  z-index: 0 !important;
+  width: 53px !important;
+  height: 53px !important;
+  border: 1px solid #fff !important;
+  border-radius: 50% !important;
+  pointer-events: none !important;
+}
+.b24-form-btn-block .b24-form-btn:hover::before {
+  right: 0px !important;
+  transition: all 1s ease 0s !important;
+}
+/*-------------------------------------------------------------------*/
 @media (max-width: 1280px) {
   .application__subtitle {
     font-size: 2.2rem;
