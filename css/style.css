@@ -1574,7 +1574,7 @@ body._lock {
   display: flex; 
 }
 .application__row {
-  flex: 0 0 34%;
+  flex: 0 0 31%;
   position: relative;
 }
 .application__text {
@@ -1665,13 +1665,17 @@ body._lock {
   background-size: cover;
   filter: drop-shadow(15px 15px 30px rgba(15, 23, 34, 0.44));
 }
-.b24-form-header.b24-form-padding-side {
-  display: none;
+.b24-form-wrapper.b24-form-shadow.b24-form-border-bottom{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: none;
+  margin: 0!important;
 }
-.b24-form-header-description {
-  display: none;
+.b24-form-state-container .b24-form-success{
+  background-color: white!important;
 }
-.b24-form-wrapper.b24-form-border-bottom {
+.b24-form-wrapper {
   width: 70%;
   height: 359px;
   display: flex;
@@ -1679,6 +1683,11 @@ body._lock {
   justify-content: center;
   border-bottom: none;
   margin: 0;
+}
+.b24-form-content.b24-form-padding-side{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .b24-form-wrapper {
   background-color: none;
@@ -1693,26 +1702,24 @@ body._lock {
   background-color: #fff;
 }
 .b24-form-btn-block .b24-form-btn {
-   content: 'Оставить заявку';
   font-size: 1rem !important;
   line-height: 1.25rem !important;
   letter-spacing: 0.035em !important;
   color: #FFFFFF !important;
   position: relative !important;
   background: url(../img/vector.svg) center right no-repeat !important;
-   padding: 0 48px 0 0 !important;
-     margin-top: 36px !important; 
-     min-height: 0 !important;
-     width: auto !important;;
-     border: 0 !important;; 
-     border-radius: 0 !important;; 
-     font-weight:  !important;
-    background-color: none !important;
+  padding: 0 48px 0 0 !important;
+  margin-top: 36px !important; 
+  min-height: 0 !important;
+  width: auto !important;;
+  border: 0 !important;; 
+  border-radius: 0 !important;
+  font-weight: normal  !important;
+  background-color: none !important;
 }
 
 .b24-form-btn-block .b24-form-btn::before {
- content: '';
-
+  content: '';
   position: absolute !important;
   bottom: -16.5px !important;
   right: -40px !important;
@@ -1734,7 +1741,7 @@ body._lock {
   }
 }
 @media (max-width: 1024px) {
-  .application__name {
+  .b24-form-control-container.b24-form-control-icon-after  {
     width: 300px;
   }
   .application__subtitle {
@@ -1753,13 +1760,13 @@ body._lock {
     width: 100%;
     flex: 0 0 auto;
   }
-  .application__name {
+  .b24-form-control-container.b24-form-control-icon-after  {
     width: 250px;
   }
   .application__name input {
     padding: 6px 0 4px 12px;
   }
-  .application__body {
+  .b24-form-wrapper {
     height: 320px;
   }
 }
@@ -1781,7 +1788,7 @@ body._lock {
     flex-direction: column;
     margin-bottom: 40px;
   }
-  .application__body {
+  .b24-form-wrapper {
     height: 240px;
   }
   .application__bottom {
@@ -1797,10 +1804,10 @@ body._lock {
     padding-left: 30px;
     flex: 0 0 60%;
   }
-  .application__name {
+  .b24-form-control-container.b24-form-control-icon-after {
     width: 200px;
   }
-  .application__form {
+  .b24-form-wrapper {
     width: 100%;
   }
   .application__block{
@@ -1838,10 +1845,10 @@ body._lock {
   .application__right {
     padding: 0;
   }
-  .application__name {
+  .b24-form-control-container.b24-form-control-icon-after {
     width: 220px;
   }
-  .application__body {
+  .b24-form-wrapper {
     height: 280px;
   }
   .application__block{
