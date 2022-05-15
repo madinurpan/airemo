@@ -544,7 +544,7 @@ body._lock {
   content: '';
   width: 187px;
   height: 88px;
-  background-image: url(../img/price-1.svg);
+  background-image: url(../img/price-one.svg);
   background-repeat: no-repeat;
   background-position: top right;
   background-size: contain;
@@ -559,7 +559,7 @@ body._lock {
   content: '';
   width: 192.41px;
   height: 88px;
-  background-image: url(../img/price-2.svg);
+  background-image: url(../img/price-two.svg);
   background-repeat: no-repeat;
   background-position: top right;
   background-size: contain;
@@ -574,7 +574,7 @@ body._lock {
   content: '';
   width: 319.21px;
   height: 102.82px;
-  background-image: url(../img/price-3.svg);
+  background-image: url(../img/price-three.svg);
   background-repeat: no-repeat;
   background-position: top right;
   background-size: contain;
@@ -706,7 +706,7 @@ body._lock {
   content: '';
   width: 207.35px;
   height: 58px;
-  background-image: url(../img/popup-1.svg);
+  background-image: url(../img/popup-one.svg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
@@ -718,7 +718,7 @@ body._lock {
   content: '';
   width: 207.35px;
   height: 58px;
-  background-image: url(../img/popup-2.svg);
+  background-image: url(../img/popup-two.svg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
@@ -731,7 +731,7 @@ body._lock {
   content: '';
   width: 250%;
   height: 150%;
-  background-image: url(../img/popup-3.svg);
+  background-image: url(../img/popup-three.svg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
@@ -959,14 +959,14 @@ body._lock {
     line-height: 1.3125rem;
   }
   .popup__title_one::after {
-    background-image: url(../img/popup-2-1.svg);
+    background-image: url(../img/popup-one.svg);
     width: 160.73px;
     height: 58px;
     top: -10px;
     right: -210px;
   }
   .popup__title_two::after {
-    background-image: url(../img/popup-2-2.svg); 
+    background-image: url(../img/popup-two.svg); 
     width: 160.73px;
     height: 58px;
     top: -10px;
@@ -976,7 +976,7 @@ body._lock {
     margin-bottom: 24px;
   }
   .popup__title_three::after {
-    background-image: url(../img/popup-2-3.svg);
+    background-image: url(../img/popup-three.svg);
     top: -20px;
     right: -220px;
     width: 224.35px;
