@@ -697,7 +697,7 @@ body._lock {
 }
 .popup__title {
   font-family: 'Oswald', sans-serif;
-  font-size: 2.25rem;
+  font-size: 1.25rem;
   line-height: 3.3125rem;
   color: #0F1722;
   position: relative;
@@ -712,7 +712,7 @@ body._lock {
   background-size: contain;
   position: absolute;
   top: 0;
-  right: -200px;
+  right: -197px;
 }
 .popup__title_two::after {
   content: '';
@@ -729,7 +729,8 @@ body._lock {
 }
 .popup__title_three::after {
   content: '';
-  width: 250%;
+  /* width: 100%; */
+  width: 200px;
   height: 150%;
   background-image: url(../img/popup-three.svg);
   background-repeat: no-repeat;
@@ -737,7 +738,7 @@ body._lock {
   background-size: contain;
   position: absolute;
   top: -10px;
-  right: -300px;
+  right: -197px;
 }
 .popup-main {
   display: flex;
@@ -939,6 +940,7 @@ body._lock {
     height: 307px;
   }
   .popup__title {
+    width: 150px;
     font-size: 1.5rem;
     line-height: 2.25rem;
   }
@@ -963,14 +965,14 @@ body._lock {
     width: 160.73px;
     height: 58px;
     top: -10px;
-    right: -210px;
+    right: -140px;
   }
   .popup__title_two::after {
     background-image: url(../img/popup-two.svg); 
     width: 160.73px;
     height: 58px;
     top: -10px;
-    right: -210px;
+    right: -140px;
   }
   .popup__title_three {
     margin-bottom: 24px;
@@ -978,8 +980,8 @@ body._lock {
   .popup__title_three::after {
     background-image: url(../img/popup-three.svg);
     top: -20px;
-    right: -220px;
-    width: 224.35px;
+    right: -140px;
+    width: 160.35px;
     height: 79px;
   }
 }
