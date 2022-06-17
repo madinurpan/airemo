@@ -121,7 +121,7 @@ body._lock {
 
 .header {
   width: 100%;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   z-index: 50;
@@ -209,7 +209,7 @@ body._lock {
     height: 20%;
     width: 100%;
     transition: all 0.3s ease 0s;
-    background-color: #0F1722;
+    background-color: white;
   }
   .menu__burger::before,
   .menu__burger::after {
@@ -271,7 +271,7 @@ body._lock {
     line-height: 1.875rem;
   }
   .header{
-    background-color: transparent!important;
+    background-color: black!important;
   }
   .header__contacts._active {
     position: relative;
@@ -322,8 +322,7 @@ body._lock {
     min-height: 46px;
   }
   .header__logo img {
-    width: 100%;
-    height: 100%;
+    width: 70%;
   }
   .contacts__one a{
     font-size: 0.875rem;
@@ -431,11 +430,15 @@ body._lock {
   }
 }
 @media (max-width: 480px) {
+  .main{
+    background-color: black;
+  }
   .main__block {
     width: 80%;
     margin-left: 15px;
-    margin-top: 50px;
+    margin-top: -50px;
   }
+
   .main__title {
     width: 80%;
     font-size: 1.5625rem;
@@ -445,7 +448,8 @@ body._lock {
   .main__subtitle {
     font-size: 1.125rem;
     line-height: 139.7%;
-    color: #0F1722;
+    color: white;
+    margin-top: 30px;
   }
   .main__link {
     line-height: 1.125rem;
@@ -468,13 +472,23 @@ body._lock {
     right: 0;
     left: 0;
     bottom: 0;
-    background-image: url(../img/main-back.jpg);
+    background-image: url(../img/clear_bg.png);
     background-repeat: no-repeat;
     background-position: top center;
     background-size: 480px 222px;
   }
+  .header__city{
+    display: none;
+  }
+  .header__min{
+    width: 50px;
+    display: block!important;
+  }
+  .contacts__call{
+    margin-left: auto;
+    margin-top: -70px;
+  }
   .main__bottom {
-    margin: 0 0 135px 0;
     padding-top: 34px;
   }
 }
